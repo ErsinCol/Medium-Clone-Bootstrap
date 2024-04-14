@@ -1,0 +1,43 @@
+:root {
+    --main-text-color: #242424;
+}
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+.bg-yellow {
+   background-color: #FFC017;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+#navbar {
+    transition: background-color 300ms linear;
+}
+
+#getStartedBtn {
+    transition: background-color 300ms linear, color 300ms linear;
+}
+
+/*
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+*/

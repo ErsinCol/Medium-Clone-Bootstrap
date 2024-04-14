@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=./css/bootstrap.min.css>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/medium.css">
+    <title>Medium Clone</title>
+</head>
+<body>
+        <nav id="navbar" class="navbar navbar-expand-lg bg-yellow border-bottom-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <strong>Medium</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Write</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <button id="getStartedBtn" class="btn btn-dark rounded-pill">Get started</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="hero" class="bg-yellow border-bottom-dark position-relative overflow-hidden h-100" style="min-height: 463px;margin-top: 71px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 py-5">
+                        <h1 class="display-1 mb-4">Stay curious.</h1>
+                        <h5 class="fs-5 mb-4">Discover stories, thinking, and expertise from writers on any topic.</h5>
+                        <button class="btn btn-dark rounded-pill">Start reading</button>
+                    </div>
+                    <div class="col-6">
+                        <div class="position-absolute top-0 end-0">
+                            <img src="./svg/medium.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-12 d-flex align-items-center gap-2 mb-3">
+                    <svg width="28" height="29" viewBox="0 0 28 29" fill="none"><path fill="#fff" d="M0 .8h28v28H0z"></path><g opacity="0.8" clip-path="url(#trending_svg__clip0)"><path fill="#fff" d="M4 4.8h20v20H4z"></path><circle cx="14" cy="14.79" r="9.5" stroke="#000"></circle><path d="M5.46 18.36l4.47-4.48M9.97 13.87l3.67 3.66M13.67 17.53l5.1-5.09M16.62 11.6h3M19.62 11.6v3" stroke="#000" stroke-linecap="round"></path></g><defs><clipPath id="trending_svg__clip0"><path fill="#fff" transform="translate(4 4.8)" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
+                    <h6 class="m-0">Trending on Medium</h6>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">01</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">02</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">03</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">04</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">05</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex mb-4">
+                    <div class="fs-2 fw-medium lh-sm me-3" style="color: #F2F2F2;">06</div>
+                    <div>
+                        <div class="mb-2 d-flex align-items-center">
+                            <img src="https://picsum.photos/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                            <h4 class="m-0" style="font-size: 13px;">Jake Page</h4>
+                        </div>
+                        <h2 class="fs-6 fw-bold">Welcome To The Emergency Room, Your Stay Will Be Unforgettable</h2>
+                        <div class="fw-normal d-flex align-items-center" style="color: #6B6B6B;font-size: 13px;">
+                            <span>Apr 12, 2024</span>
+                            <div class="px-1">·</div>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 border-top border-light-subtle">
+            <div class="container">
+                <div class="row">
+                    <section class="col-8">
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                        <article class="row mb-5">
+                            <div class="col-8">
+                                <div class="pb-2 d-flex align-items-center">
+                                    <img src="https://picsum.photos/id/203/20/20" alt="..." width="20px" height="20px" class="rounded-circle me-2">
+                                    <h4 class="m-0" style="font-size: 13px;">Ryan Tripp</h4>
+                                </div>
+                                <h2 class="fs-5 fw-bold">The Perks of Being a Capable Novice</h2>
+                                <h3 class="fs-6 fw-normal" style="color: #6B6B6B;">Letting go of perfect to make room for something better</h3>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="d-flex align-items-center" style="font-size: 13px">
+                                        <span>Mar 31, 2024</span>
+                                        <span class="px-1">·</span>
+                                        <span>8 min read</span>
+                                        <span class="px-1">·</span>
+                                        <button class="btn btn-sm rounded-pill btn-light" style="font-size: 13px;">Outdoors</button>
+                                    </div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://picsum.photos/id/204/200/130" alt="...">
+                            </div>
+                        </article>
+                    </section>
+                    <aside class="col-4">
+                        <div class="sticky-top" style="top: 100px;">
+                            <div class="border-bottom border-light-subtle pb-4">
+                                <h2 class="fw-bold fs-6 m-0 pb-3" style="color:#242424;">Discover more of what matters to you</h2>
+                                <ul class="d-flex flex-wrap gap-2 m-0 p-0 discover-list" style="list-style-type: none;">
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Programming</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Data Science</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Technology</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Machine</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Relationship</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Politics</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Writing</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn rounded-pill bg-secondary-subtle" role="button">Self Improvement</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn bg-secondary-subtle rounded-pill" role="button">Productivity</a>
+                                    </li>
+                                </ul>
+                                <p class="fw-normal mt-3" style="color: #1A8917;font-size: 14px;">See more topics</p>
+                            </div>
+                            <div class="d-flex flex-wrap fw-normal py-4">
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Help</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Status</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">About</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Careers</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Blog</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Privacy</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Terms</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Text to speech</div>
+                                <div class="me-4 mb-2 text-opacity-50 text-black">Teams</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/medium.js"></script>
+</body>
+</html>
